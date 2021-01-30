@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210625C60B3D00CCCDF7 /* HeaderView.swift */; };
+		C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */; };
 		C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836C55825A0171500BEB83F /* AppDelegate.swift */; };
 		C836C55B25A0171500BEB83F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836C55A25A0171500BEB83F /* ContentView.swift */; };
 		C836C55D25A0171600BEB83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C836C55C25A0171600BEB83F /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C82C210625C60B3D00CCCDF7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
 		C836C55525A0171500BEB83F /* Notebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C836C55825A0171500BEB83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C836C55A25A0171500BEB83F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				C836C56425A0171600BEB83F /* Info.plist */,
 				C836C56525A0171600BEB83F /* Notebar.entitlements */,
 				C836C55E25A0171600BEB83F /* Preview Content */,
+				C82C210625C60B3D00CCCDF7 /* HeaderView.swift */,
+				C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */,
 			);
 			path = Notebar;
 			sourceTree = "<group>";
@@ -90,6 +96,8 @@
 			dependencies = (
 			);
 			name = Notebar;
+			packageProductDependencies = (
+			);
 			productName = Notebar;
 			productReference = C836C55525A0171500BEB83F /* Notebar.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +125,8 @@
 				Base,
 			);
 			mainGroup = C836C54C25A0171500BEB83F;
+			packageReferences = (
+			);
 			productRefGroup = C836C55625A0171500BEB83F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C836C55B25A0171500BEB83F /* ContentView.swift in Sources */,
+				C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */,
+				C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */,
 				C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +307,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stakelon.Notebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -319,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stakelon.Notebar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
