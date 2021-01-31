@@ -46,7 +46,7 @@ struct ContentView: View {
                         .onTapGesture {
                             themeManager.hideThemeEditor()
                         }
-                    ThemeEditor(themeManager: themeManager)
+                    ThemeEditorView(themeManager: themeManager)
                         .frame(width: 240, height: 240)
                 }
             }
@@ -61,29 +61,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-class ThemeManager: ObservableObject {
-    @Published var isThemeEditor: Bool = false
-    func showThemeEditor() {
-        self.isThemeEditor = true
-    }
-    func hideThemeEditor() {
-        self.isThemeEditor = false
-    }
-}
-
-struct ThemeEditor: View {
-    @ObservedObject var themeManager: ThemeManager
-    var body: some View {
-
-        HStack {
-            Spacer()
-                HStack {
-                    Text("Theme editor")
-                }.frame(width: 240, height: 240)
-                .background(Color(.windowBackgroundColor))
-                .cornerRadius(8)
-            Spacer()
-        }
-
-    }
-}

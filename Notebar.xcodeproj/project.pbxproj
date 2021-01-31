@@ -10,6 +10,8 @@
 		C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210625C60B3D00CCCDF7 /* HeaderView.swift */; };
 		C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */; };
 		C82C211025C62D8100CCCDF7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C210F25C62D8100CCCDF7 /* Colors.xcassets */; };
+		C82C211625C7717E00CCCDF7 /* ThemeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C211525C7717E00CCCDF7 /* ThemeEditorView.swift */; };
+		C82C211925C771CA00CCCDF7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C211825C771CA00CCCDF7 /* ThemeManager.swift */; };
 		C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836C55825A0171500BEB83F /* AppDelegate.swift */; };
 		C836C55B25A0171500BEB83F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836C55A25A0171500BEB83F /* ContentView.swift */; };
 		C836C55D25A0171600BEB83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C836C55C25A0171600BEB83F /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		C82C210625C60B3D00CCCDF7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
 		C82C210F25C62D8100CCCDF7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C82C211525C7717E00CCCDF7 /* ThemeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEditorView.swift; sourceTree = "<group>"; };
+		C82C211825C771CA00CCCDF7 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		C836C55525A0171500BEB83F /* Notebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C836C55825A0171500BEB83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C836C55A25A0171500BEB83F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 				C836C55A25A0171500BEB83F /* ContentView.swift */,
 				C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */,
 				C82C210625C60B3D00CCCDF7 /* HeaderView.swift */,
+				C82C211525C7717E00CCCDF7 /* ThemeEditorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,6 +84,7 @@
 				C836C56525A0171600BEB83F /* Notebar.entitlements */,
 				C836C55E25A0171600BEB83F /* Preview Content */,
 				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
+				C82C211825C771CA00CCCDF7 /* ThemeManager.swift */,
 			);
 			path = Notebar;
 			sourceTree = "<group>";
@@ -168,8 +174,10 @@
 			files = (
 				C836C55B25A0171500BEB83F /* ContentView.swift in Sources */,
 				C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */,
+				C82C211625C7717E00CCCDF7 /* ThemeEditorView.swift in Sources */,
 				C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */,
 				C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */,
+				C82C211925C771CA00CCCDF7 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
