@@ -7,10 +7,19 @@
 
 import SwiftUI
 
+extension NSTextView {
+    open override var frame: CGRect {
+        didSet {
+            backgroundColor = .clear //<<here clear
+            drawsBackground = true
+        }
+    }
+}
+
 struct ContentView: View {
     private var placeholder: String = "writesomething"
     @State private var text: String = ""
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HeaderView()
@@ -18,13 +27,14 @@ struct ContentView: View {
                 TextEditor(text: $text)
                     .font(Font.system(.body, design: .monospaced))
                     .padding(.leading, -5)
+                    .foregroundColor(Color(.textColor))
                 if (text == "") {
                     Text(placeholder)
                         .font(Font.system(.body, design: .monospaced))
-                        .foregroundColor(Color.gray)
+                        .foregroundColor(Color(.placeholderTextColor))
                 }
             }.padding(12)
-        }.background(Color.white)
+        }.background(Color(.windowBackgroundColor))
            
     }
 }

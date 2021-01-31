@@ -18,6 +18,6 @@ struct HeaderView: View {
             .padding(.vertical, 4)
             .padding(.horizontal, 12)
             Divider().background(Color.gray.opacity(0.1))
-        }.background(Color.gray.opacity(0.1))
+        }.background(Color(.windowBackgroundColor))
     }
 }

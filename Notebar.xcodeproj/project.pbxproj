@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210625C60B3D00CCCDF7 /* HeaderView.swift */; };
 		C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */; };
+		C82C211025C62D8100CCCDF7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C210F25C62D8100CCCDF7 /* Colors.xcassets */; };
 		C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836C55825A0171500BEB83F /* AppDelegate.swift */; };
 		C836C55B25A0171500BEB83F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C836C55A25A0171500BEB83F /* ContentView.swift */; };
 		C836C55D25A0171600BEB83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C836C55C25A0171600BEB83F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		C82C210625C60B3D00CCCDF7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
+		C82C210F25C62D8100CCCDF7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C836C55525A0171500BEB83F /* Notebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C836C55825A0171500BEB83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C836C55A25A0171500BEB83F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				C836C55E25A0171600BEB83F /* Preview Content */,
 				C82C210625C60B3D00CCCDF7 /* HeaderView.swift */,
 				C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */,
+				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
 			);
 			path = Notebar;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C836C56325A0171600BEB83F /* Main.storyboard in Resources */,
+				C82C211025C62D8100CCCDF7 /* Colors.xcassets in Resources */,
 				C836C56025A0171600BEB83F /* Preview Assets.xcassets in Resources */,
 				C836C55D25A0171600BEB83F /* Assets.xcassets in Resources */,
 			);
