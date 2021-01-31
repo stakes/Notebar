@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DropdownMenuView: NSViewRepresentable {
+    
+    @ObservedObject var themeManager: ThemeManager
         
     func makeNSView(context: Context) -> NSPopUpButton {
         
@@ -25,13 +27,18 @@ struct DropdownMenuView: NSViewRepresentable {
         let iconImage = NSImage(named: "GearIcon")
         iconImage?.size = NSSize(width: 12, height: 12)
         iconItem.image = iconImage
+        
+        let themeItem = NSMenuItem(title: "Change theme", action: #selector(Coordinator.themeAction), keyEquivalent: "")
+        themeItem.representedObject = self.themeManager
+        themeItem.target = context.coordinator
 
         let quitItem = NSMenuItem(title: "Quit", action: #selector(Coordinator.quitAction), keyEquivalent: "q")
         quitItem.target = context.coordinator
 
         nsView.menu?.insertItem(iconItem, at: 0)
-        nsView.menu?.insertItem(NSMenuItem.separator(), at: 1)
-        nsView.menu?.insertItem(quitItem, at: 2)
+        nsView.menu?.insertItem(themeItem, at: 1)
+        nsView.menu?.insertItem(NSMenuItem.separator(), at: 2)
+        nsView.menu?.insertItem(quitItem, at: 3)
 
         let cell = nsView.cell as? NSButtonCell
         cell?.imagePosition = .imageOnly
@@ -50,6 +57,10 @@ struct DropdownMenuView: NSViewRepresentable {
     class Coordinator: NSObject {
         @objc func quitAction(_ sender: NSMenuItem) {
             NSApplication.shared.terminate(self)
+        }
+        @objc func themeAction(_ sender: NSMenuItem) {
+            let tm = sender.representedObject as! ThemeManager
+            tm.showThemeEditor()
         }
     }
 }

@@ -42,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C82C211225C63CA800CCCDF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C836C55A25A0171500BEB83F /* ContentView.swift */,
+				C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */,
+				C82C210625C60B3D00CCCDF7 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C836C54C25A0171500BEB83F = {
 			isa = PBXGroup;
 			children = (
@@ -61,15 +71,13 @@
 		C836C55725A0171500BEB83F /* Notebar */ = {
 			isa = PBXGroup;
 			children = (
+				C82C211225C63CA800CCCDF7 /* Views */,
 				C836C55825A0171500BEB83F /* AppDelegate.swift */,
-				C836C55A25A0171500BEB83F /* ContentView.swift */,
 				C836C55C25A0171600BEB83F /* Assets.xcassets */,
 				C836C56125A0171600BEB83F /* Main.storyboard */,
 				C836C56425A0171600BEB83F /* Info.plist */,
 				C836C56525A0171600BEB83F /* Notebar.entitlements */,
 				C836C55E25A0171600BEB83F /* Preview Content */,
-				C82C210625C60B3D00CCCDF7 /* HeaderView.swift */,
-				C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */,
 				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
 			);
 			path = Notebar;

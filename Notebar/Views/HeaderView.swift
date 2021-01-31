@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @ObservedObject var themeManager: ThemeManager
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack {
                 Text("Notebar").font(Font.system(size: 12, weight: .bold, design: .rounded))
                 Spacer()
-                DropdownMenuView().frame(width: 24, height: 24)
+                DropdownMenuView(themeManager: themeManager).frame(width: 24, height: 24)
             }
             .padding(.vertical, 4)
             .padding(.horizontal, 12)
