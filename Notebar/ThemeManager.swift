@@ -8,20 +8,39 @@
 import Foundation
 import SwiftUI
 
-enum Theme {
-    case system
-    case light
-    case dark
-    case custom
+enum Theme: String {
+    case system = "system"
+    case light = "light"
+    case dark = "dark"
+    case custom = "custom"
 }
 
 class ThemeManager: ObservableObject {
     @Published var isThemeEditor: Bool = false
-    @Published var currentTheme: Theme = .system
+    @Published var currentTheme: Theme {
+        didSet {
+            UserDefaults.standard.set(currentTheme.rawValue, forKey: "theme")
+        }
+    }
     @Published var bgColor = Color(.textBackgroundColor)
     @Published var textColor = Color(.textColor )
     @Published var customBgColor = Color(.sRGB, red: 33/255, green: 26/255, blue: 16/255)
     @Published var customTextColor = Color(.sRGB, red: 162/255, green: 144/255, blue: 112/255)
+    
+    init() {
+        var theme: Theme
+        if let data = UserDefaults.standard.object(forKey: "theme") as? String {
+            print(data)
+            theme = Theme(rawValue: data) ?? Theme.system
+            print(theme)
+        } else {
+            theme = Theme.system
+        }
+        self.currentTheme = theme
+        setTextColor(self.currentTheme)
+        setBgColor(self.currentTheme)
+    }
+    
     func showThemeEditor() {
         self.isThemeEditor = true
     }
