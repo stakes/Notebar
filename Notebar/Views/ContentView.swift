@@ -29,15 +29,15 @@ struct ContentView: View {
                     TextEditor(text: $text)
                         .font(Font.system(.body, design: .monospaced))
                         .padding(.leading, -5)
-                        .foregroundColor(Color(.textColor))
+                        .foregroundColor(themeManager.textColor)
                     if (text == "") {
                         Text(placeholder)
                             .font(Font.system(.body, design: .monospaced))
-                            .foregroundColor(Color(.placeholderTextColor))
+                            .foregroundColor(themeManager.bgColor)
                     }
                 }
                 .padding(12)
-                .background(Color(.textBackgroundColor))
+                .background(themeManager.bgColor)
             }
             if (themeManager.isThemeEditor) {
                 ZStack {
