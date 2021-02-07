@@ -21,23 +21,41 @@ enum FirstResponders: Int {
     case textEditor
 }
 
+class TextManager: ObservableObject {
+    @Published var text: String {
+        didSet {
+            UserDefaults.standard.set(text, forKey: "text")
+        }
+    }
+    
+    init() {
+        var text: String
+        if let data = UserDefaults.standard.object(forKey: "text") as? String {
+            text = data
+        } else {
+            text = ""
+        }
+        self.text = text
+    }
+}
+
 struct ContentView: View {
     private var placeholder: String = "writesomething"
-    @State private var text: String = ""
     @State var firstResponder: FirstResponders? = FirstResponders.textEditor
     @ObservedObject var themeManager = ThemeManager()
-
+    @ObservedObject var textManager = TextManager()
+    
     var body: some View {
         ZStack {
             VStack(alignment: .leading, spacing: 0) {
                 HeaderView(themeManager: themeManager)
                 ZStack(alignment: .topLeading) {
-                    TextEditor(text: $text)
+                    TextEditor(text: $textManager.text)
                         .firstResponder(id: FirstResponders.textEditor, firstResponder: $firstResponder)
                         .font(Font.system(.body, design: .monospaced))
                         .padding(.leading, -5)
                         .foregroundColor(themeManager.textColor)
-                    if (text == "") {
+                    if (textManager.text == "") {
                         Text(placeholder)
                             .font(Font.system(.body, design: .monospaced))
                             .foregroundColor(themeManager.textColor)
