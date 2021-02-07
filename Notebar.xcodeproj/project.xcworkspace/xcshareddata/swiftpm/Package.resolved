@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MbSwiftUIFirstResponder",
+        "repositoryURL": "https://github.com/Mobilinked/MbSwiftUIFirstResponder",
+        "state": {
+          "branch": "main",
+          "revision": "4eafce5e917742334183f9bde9ebeedbcc0b1651",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C803A1EF25CF941200366CEB /* MbSwiftUIFirstResponder in Frameworks */ = {isa = PBXBuildFile; productRef = C803A1EE25CF941200366CEB /* MbSwiftUIFirstResponder */; };
 		C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210625C60B3D00CCCDF7 /* HeaderView.swift */; };
 		C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */; };
 		C82C211025C62D8100CCCDF7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C210F25C62D8100CCCDF7 /* Colors.xcassets */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C803A1EF25CF941200366CEB /* MbSwiftUIFirstResponder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +116,7 @@
 			);
 			name = Notebar;
 			packageProductDependencies = (
+				C803A1EE25CF941200366CEB /* MbSwiftUIFirstResponder */,
 			);
 			productName = Notebar;
 			productReference = C836C55525A0171500BEB83F /* Notebar.app */;
@@ -143,6 +146,7 @@
 			);
 			mainGroup = C836C54C25A0171500BEB83F;
 			packageReferences = (
+				C803A1ED25CF941200366CEB /* XCRemoteSwiftPackageReference "MbSwiftUIFirstResponder" */,
 			);
 			productRefGroup = C836C55625A0171500BEB83F /* Products */;
 			projectDirPath = "";
@@ -380,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C803A1ED25CF941200366CEB /* XCRemoteSwiftPackageReference "MbSwiftUIFirstResponder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mobilinked/MbSwiftUIFirstResponder";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C803A1EE25CF941200366CEB /* MbSwiftUIFirstResponder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C803A1ED25CF941200366CEB /* XCRemoteSwiftPackageReference "MbSwiftUIFirstResponder" */;
+			productName = MbSwiftUIFirstResponder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C836C54D25A0171500BEB83F /* Project object */;
 }

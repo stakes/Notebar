@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MbSwiftUIFirstResponder
 
 extension NSTextView {
     open override var frame: CGRect {
@@ -16,9 +17,14 @@ extension NSTextView {
     }
 }
 
+enum FirstResponders: Int {
+    case textEditor
+}
+
 struct ContentView: View {
     private var placeholder: String = "writesomething"
     @State private var text: String = ""
+    @State var firstResponder: FirstResponders? = FirstResponders.textEditor
     @ObservedObject var themeManager = ThemeManager()
 
     var body: some View {
@@ -27,11 +33,10 @@ struct ContentView: View {
                 HeaderView(themeManager: themeManager)
                 ZStack(alignment: .topLeading) {
                     TextEditor(text: $text)
+                        .firstResponder(id: FirstResponders.textEditor, firstResponder: $firstResponder)
                         .font(Font.system(.body, design: .monospaced))
                         .padding(.leading, -5)
                         .foregroundColor(themeManager.textColor)
-                        .listItemTint(.purple)
-                        .accentColor(.purple)
                     if (text == "") {
                         Text(placeholder)
                             .font(Font.system(.body, design: .monospaced))
