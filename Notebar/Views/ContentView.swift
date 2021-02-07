@@ -54,6 +54,7 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .onTapGesture {
                             themeManager.hideThemeEditor()
+                            firstResponder = FirstResponders.textEditor
                         }
                         .animation(.easeOut(duration: 0.25))
                     ThemeEditorView(themeManager: themeManager)
