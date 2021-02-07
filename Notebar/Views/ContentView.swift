@@ -21,24 +21,6 @@ enum FirstResponders: Int {
     case textEditor
 }
 
-class TextManager: ObservableObject {
-    @Published var text: String {
-        didSet {
-            UserDefaults.standard.set(text, forKey: "text")
-        }
-    }
-    
-    init() {
-        var text: String
-        if let data = UserDefaults.standard.object(forKey: "text") as? String {
-            text = data
-        } else {
-            text = ""
-        }
-        self.text = text
-    }
-}
-
 struct ContentView: View {
     private var placeholder: String = "writesomething"
     @State var firstResponder: FirstResponders? = FirstResponders.textEditor

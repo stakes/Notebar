@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C803A1EF25CF941200366CEB /* MbSwiftUIFirstResponder in Frameworks */ = {isa = PBXBuildFile; productRef = C803A1EE25CF941200366CEB /* MbSwiftUIFirstResponder */; };
+		C803A1F225CF98DF00366CEB /* TextManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A1F125CF98DF00366CEB /* TextManager.swift */; };
 		C82C210725C60B3D00CCCDF7 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210625C60B3D00CCCDF7 /* HeaderView.swift */; };
 		C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */; };
 		C82C211025C62D8100CCCDF7 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82C210F25C62D8100CCCDF7 /* Colors.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C803A1F125CF98DF00366CEB /* TextManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextManager.swift; sourceTree = "<group>"; };
 		C82C210625C60B3D00CCCDF7 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C82C210925C60B5E00CCCDF7 /* DropdownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownMenuView.swift; sourceTree = "<group>"; };
 		C82C210F25C62D8100CCCDF7 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				C836C55E25A0171600BEB83F /* Preview Content */,
 				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
 				C82C211825C771CA00CCCDF7 /* ThemeManager.swift */,
+				C803A1F125CF98DF00366CEB /* TextManager.swift */,
 			);
 			path = Notebar;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				C82C210A25C60B5E00CCCDF7 /* DropdownMenuView.swift in Sources */,
 				C836C55925A0171500BEB83F /* AppDelegate.swift in Sources */,
 				C82C211925C771CA00CCCDF7 /* ThemeManager.swift in Sources */,
+				C803A1F225CF98DF00366CEB /* TextManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
