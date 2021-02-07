@@ -19,53 +19,54 @@ struct ThemeEditorView: View {
                         }) {
                             Image(systemName: "laptopcomputer")
                                 .font(.largeTitle)
-                        }.buttonStyle(PlainButtonStyle())
-                        .frame(width: 48, height: 48)
-                        .background((themeManager.currentTheme == .system) ? Color(.selectedControlColor) : Color.black)
-                        .cornerRadius(8)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .system) ? Color(.selectedControlColor) : Color.black, lineWidth: 1)
-                        ).help("System default")
+                                .frame(width: 48, height: 48)
+                                .background((themeManager.currentTheme == .system) ? Color(.selectedControlColor) : Color(.controlColor))
+                                .cornerRadius(8)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .system) ? Color(.selectedControlColor) : Color(.controlColor), lineWidth: 1)
+                            ).help("System default")
+                        }
                         
                         Button(action: {
                             themeManager.setTheme(.light)
                         }) {
                             Image(systemName: "sun.max")
                                 .font(.largeTitle)
-                                
-                        }.buttonStyle(PlainButtonStyle())
-                        .frame(width: 48, height: 48)
-                        .background((themeManager.currentTheme == .light) ? Color(.selectedControlColor) : Color.black)
-                        .cornerRadius(8)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .light) ? Color(.selectedControlColor) : Color.black, lineWidth: 1)
-                        ).help("Light mode")
+                                .frame(width: 48, height: 48)
+                                .background((themeManager.currentTheme == .light) ? Color(.selectedControlColor) : Color(.controlColor))
+                                .cornerRadius(8)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .light) ? Color(.selectedControlColor) : Color(.controlColor), lineWidth: 1)
+                            ).help("Light mode")
+                        }
+                        .buttonStyle(PlainButtonStyle())
                     
                         Button(action: {
                             themeManager.setTheme(.dark)
                         }) {
                             Image(systemName: "moon")
                                 .font(.largeTitle)
+                                .frame(width: 48, height: 48)
+                                .background((themeManager.currentTheme == .dark) ? Color(.selectedControlColor) : Color(.controlColor))
+                                .cornerRadius(8)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .dark) ? Color(.selectedControlColor) : Color(.controlColor), lineWidth: 1)
+                            ).help("Dark mode")
                         }.buttonStyle(PlainButtonStyle())
-                        .frame(width: 48, height: 48)
-                        .background((themeManager.currentTheme == .dark) ? Color(.selectedControlColor) : Color.black)
-                        .cornerRadius(8)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .dark) ? Color(.selectedControlColor) : Color.black, lineWidth: 1)
-                        ).help("Dark mode")
-                        
+
                         Button(action: {
                             themeManager.setTheme(.custom)
                         }) {
                             Image(systemName: "paintpalette")
                                 .font(.largeTitle)
+                                .frame(width: 48, height: 48)
+                                .background((themeManager.currentTheme == .custom) ? Color(.selectedControlColor) : Color(.controlColor))
+                                .cornerRadius(8)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .custom) ? Color(.selectedControlColor) : Color(.controlColor), lineWidth: 1)
+                            ).help("Customize")
                         }.buttonStyle(PlainButtonStyle())
-                        .frame(width: 48, height: 48)
-                        .background((themeManager.currentTheme == .custom) ? Color(.selectedControlColor) : Color.black)
-                        .cornerRadius(8)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .custom) ? Color(.selectedControlColor) : Color.black, lineWidth: 1)
-                        ).help("Customize")
+                        
                     }
                     Divider().foregroundColor(Color(.separatorColor))
                     VStack {

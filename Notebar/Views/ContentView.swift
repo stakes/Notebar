@@ -30,25 +30,33 @@ struct ContentView: View {
                         .font(Font.system(.body, design: .monospaced))
                         .padding(.leading, -5)
                         .foregroundColor(themeManager.textColor)
+                        .listItemTint(.purple)
+                        .accentColor(.purple)
                     if (text == "") {
                         Text(placeholder)
                             .font(Font.system(.body, design: .monospaced))
-                            .foregroundColor(themeManager.bgColor)
+                            .foregroundColor(themeManager.textColor)
+                            .opacity(0.4)
                     }
-                }
+                }.accentColor(.yellow)
                 .padding(12)
                 .background(themeManager.bgColor)
             }
-            if (themeManager.isThemeEditor) {
-                ZStack {
-                    Color("Scrim")
+            ZStack {
+//                if themeManager.isThemeEditor {
+                    Color(.shadowColor)
+                        .opacity(themeManager.isThemeEditor ? 0.5 : 0)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .onTapGesture {
                             themeManager.hideThemeEditor()
                         }
+                        .animation(.easeOut(duration: 0.25))
                     ThemeEditorView(themeManager: themeManager)
                         .frame(width: 240, height: 240)
-                }
+                        .offset(y: themeManager.isThemeEditor ? 0 : 400)
+                        .animation(.easeOut(duration: 0.25))
+//                }
+                
             }
         }
         .background(Color(.windowBackgroundColor))

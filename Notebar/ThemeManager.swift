@@ -30,9 +30,7 @@ class ThemeManager: ObservableObject {
     init() {
         var theme: Theme
         if let data = UserDefaults.standard.object(forKey: "theme") as? String {
-            print(data)
             theme = Theme(rawValue: data) ?? Theme.system
-            print(theme)
         } else {
             theme = Theme.system
         }
@@ -55,9 +53,9 @@ class ThemeManager: ObservableObject {
     func setTextColor(_ t: Theme) {
         switch t {
         case .dark:
-            textColor = Color.white
+            textColor = Color(.sRGB, red: 255/255, green: 255/255, blue: 255/255)
         case .light:
-            textColor = Color.black
+            textColor = Color(.sRGB, red: 7/255, green: 7/255, blue: 7/255)
         case .custom:
             textColor = customTextColor
         case .system:
@@ -67,9 +65,9 @@ class ThemeManager: ObservableObject {
     func setBgColor(_ t: Theme) {
         switch t {
         case .dark:
-            bgColor = Color.black
+            bgColor = Color(.sRGB, red: 30/255, green: 30/255, blue: 30/255)
         case .light:
-            bgColor = Color.white
+            bgColor = Color(.sRGB, red: 255/255, green: 255/255, blue: 255/255)
         case .custom:
             bgColor = customBgColor
         case .system:
