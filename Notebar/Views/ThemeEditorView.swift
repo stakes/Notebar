@@ -87,7 +87,13 @@ struct ThemeEditorView: View {
                 .cornerRadius(8)
             Spacer()
         }
-
+        .onHover { inside in
+                    if inside {
+                        NSCursor.crosshair.push()
+                    } else {
+                        NSCursor.pop()
+                    }
+                }
     }
 }
 

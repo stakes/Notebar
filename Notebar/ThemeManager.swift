@@ -24,8 +24,16 @@ class ThemeManager: ObservableObject {
     }
     @Published var bgColor = Color(.textBackgroundColor)
     @Published var textColor = Color(.textColor )
-    @Published var customBgColor = Color(.sRGB, red: 33/255, green: 26/255, blue: 16/255)
-    @Published var customTextColor = Color(.sRGB, red: 162/255, green: 144/255, blue: 112/255)
+    @Published var customBgColor = Color(.sRGB, red: 33/255, green: 26/255, blue: 16/255) {
+        willSet {
+            bgColor = customBgColor
+        }
+    }
+    @Published var customTextColor = Color(.sRGB, red: 162/255, green: 144/255, blue: 112/255) {
+        willSet {
+            textColor = customTextColor
+        }
+    }
     
     init() {
         var theme: Theme
