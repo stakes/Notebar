@@ -54,31 +54,7 @@ struct ThemeEditorView: View {
                                     RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .dark) ? Color(.selectedControlColor) : Color(.controlColor), lineWidth: 1)
                             ).help("Dark mode")
                         }.buttonStyle(PlainButtonStyle())
-
-                        Button(action: {
-                            themeManager.setTheme(.custom)
-                        }) {
-                            Image(systemName: "paintpalette")
-                                .font(.largeTitle)
-                                .frame(width: 48, height: 48)
-                                .background((themeManager.currentTheme == .custom) ? Color(.selectedControlColor) : Color(.controlColor))
-                                .cornerRadius(8)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 8).stroke((themeManager.currentTheme == .custom) ? Color(.selectedControlColor) : Color(.controlColor), lineWidth: 1)
-                            ).help("Customize")
-                        }.buttonStyle(PlainButtonStyle())
                         
-                    }
-                    Divider().foregroundColor(Color(.separatorColor))
-                    VStack {
-                        ColorPicker("Text color", selection: $themeManager.customTextColor, supportsOpacity: false)
-                            .disabled(themeManager.currentTheme == .custom ? false : /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                            .opacity(themeManager.currentTheme == .custom ? 1 : 0.1)
-                            .frame(width: 200, height: 48)
-                        ColorPicker("Background color", selection: $themeManager.customBgColor, supportsOpacity: false)
-                            .disabled(themeManager.currentTheme == .custom ? false: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                            .opacity(themeManager.currentTheme == .custom ? 1 : 0.1)
-                            .frame(width: 200, height: 48)
                     }
                 }
                 .frame(width: 240, height: 240)
@@ -87,13 +63,13 @@ struct ThemeEditorView: View {
                 .cornerRadius(8)
             Spacer()
         }
-        .onHover { inside in
-                    if inside {
-                        NSCursor.crosshair.push()
-                    } else {
-                        NSCursor.pop()
-                    }
-                }
+//        .onHover { inside in
+//                    if inside {
+//                        NSCursor.crosshair.push()
+//                    } else {
+//                        NSCursor.pop()
+//                    }
+//                }
     }
 }
 
