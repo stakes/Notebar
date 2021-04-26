@@ -24,9 +24,9 @@ struct DropdownMenuView: NSViewRepresentable {
         nsView.removeAllItems()
         
         let iconItem = NSMenuItem()
-        let iconImage = NSImage(named: "GearIcon")
-        iconImage?.size = NSSize(width: 12, height: 12)
-        iconItem.image = iconImage
+//        let iconImage = NSImage(named: "GearIcon")
+//        iconImage?.size = NSSize(width: 12, height: 12)
+//        iconItem.image = iconImage
         
         let themeItem = NSMenuItem(title: "Change theme", action: #selector(Coordinator.themeAction), keyEquivalent: "")
         themeItem.representedObject = self.themeManager
@@ -36,9 +36,9 @@ struct DropdownMenuView: NSViewRepresentable {
         quitItem.target = context.coordinator
 
         nsView.menu?.insertItem(iconItem, at: 0)
-        nsView.menu?.insertItem(themeItem, at: 1)
-        nsView.menu?.insertItem(NSMenuItem.separator(), at: 2)
-        nsView.menu?.insertItem(quitItem, at: 3)
+//        nsView.menu?.insertItem(themeItem, at: 1)
+//        nsView.menu?.insertItem(NSMenuItem.separator(), at: 2)
+        nsView.menu?.insertItem(quitItem, at: 1)
 
         let cell = nsView.cell as? NSButtonCell
         cell?.imagePosition = .imageOnly
