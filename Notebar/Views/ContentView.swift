@@ -21,7 +21,6 @@ enum FirstResponders: Int {
     case textEditor
 }
 
-
 struct ContentView: View {
     private var placeholder: String = "writesomething"
     @State var firstResponder: FirstResponders? = FirstResponders.textEditor

@@ -80,16 +80,16 @@
 		C836C55725A0171500BEB83F /* Notebar */ = {
 			isa = PBXGroup;
 			children = (
-				C82C211225C63CA800CCCDF7 /* Views */,
 				C836C55825A0171500BEB83F /* AppDelegate.swift */,
+				C803A1F125CF98DF00366CEB /* TextManager.swift */,
+				C82C211825C771CA00CCCDF7 /* ThemeManager.swift */,
+				C82C211225C63CA800CCCDF7 /* Views */,
 				C836C55C25A0171600BEB83F /* Assets.xcassets */,
+				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
 				C836C56125A0171600BEB83F /* Main.storyboard */,
 				C836C56425A0171600BEB83F /* Info.plist */,
 				C836C56525A0171600BEB83F /* Notebar.entitlements */,
 				C836C55E25A0171600BEB83F /* Preview Content */,
-				C82C210F25C62D8100CCCDF7 /* Colors.xcassets */,
-				C82C211825C771CA00CCCDF7 /* ThemeManager.swift */,
-				C803A1F125CF98DF00366CEB /* TextManager.swift */,
 			);
 			path = Notebar;
 			sourceTree = "<group>";
