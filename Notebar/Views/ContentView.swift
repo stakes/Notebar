@@ -22,7 +22,7 @@ enum FirstResponders: Int {
 }
 
 struct ContentView: View {
-    private var placeholder: String = "writesomething"
+    private var placeholder: String = "hello there"
     @State var firstResponder: FirstResponders? = FirstResponders.textEditor
     @ObservedObject var themeManager = ThemeManager()
     @ObservedObject var textManager = TextManager()
