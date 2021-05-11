@@ -9,12 +9,6 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
-    "\/build\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/docs\/build\/node_modules",
-      "oF" : 0
-    },
     "\/docs" : {
       "ft" : 65536,
       "oA" : 1,
@@ -284,7 +278,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_green",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 642399896.75369596
+    "lastBuiltDate" : 642400035.78946495
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
