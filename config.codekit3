@@ -57,14 +57,6 @@
       "oF" : 0,
       "pg" : 2
     },
-    "\/Notebar.xcodeproj\/project.xcworkspace\/contents.xcworkspacedata" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/docs\/Notebar.xcodeproj\/project.xcworkspace\/contents.xcworkspacedata",
-      "oF" : 0
-    },
     "\/package-lock.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -105,42 +97,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/source\/assets\/daybar-16x16.png" : {
-      "ft" : 32768,
-      "iS" : 564,
-      "oA" : 0,
-      "oAP" : "\/docs\/assets\/daybar-16x16.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/source\/assets\/daybar-32x32.png" : {
-      "ft" : 32768,
-      "iS" : 1445,
-      "oA" : 0,
-      "oAP" : "\/docs\/assets\/daybar-32x32.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/source\/assets\/daybar-icon.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/docs\/assets\/daybar-icon.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/source\/assets\/notebar-16x16.png" : {
       "ft" : 32768,
       "iS" : 535,
@@ -177,11 +133,11 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/source\/assets\/snapbar-16x16.png" : {
+    "\/source\/assets\/notebar-img-dark.png" : {
       "ft" : 32768,
-      "iS" : 694,
+      "iS" : 101966,
       "oA" : 0,
-      "oAP" : "\/docs\/assets\/snapbar-16x16.png",
+      "oAP" : "\/docs\/assets\/notebar-img-dark.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
@@ -190,34 +146,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/source\/assets\/snapbar-32x32.png" : {
+    "\/source\/assets\/notebar-img-light.png" : {
       "ft" : 32768,
-      "iS" : 1636,
+      "iS" : 118241,
       "oA" : 0,
-      "oAP" : "\/docs\/assets\/snapbar-32x32.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/source\/assets\/snapbar-icon.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/docs\/assets\/snapbar-icon.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/source\/assets\/snapbar-img.png" : {
-      "ft" : 32768,
-      "iS" : 249942,
-      "oA" : 0,
-      "oAP" : "\/docs\/assets\/snapbar-img.png",
+      "oAP" : "\/docs\/assets\/notebar-img-light.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
@@ -278,7 +211,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_green",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 642400035.78946495
+    "lastBuiltDate" : 642663270.987468
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
