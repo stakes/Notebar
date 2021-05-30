@@ -84,11 +84,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/source\/assets\/app-placeholder.png" : {
+    "\/source\/android-chrome-192x192.png" : {
       "ft" : 32768,
-      "iS" : 3758,
+      "iS" : 20654,
       "oA" : 0,
-      "oAP" : "\/docs\/assets\/app-placeholder.png",
+      "oAP" : "\/docs\/android-chrome-192x192.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
@@ -97,11 +97,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/source\/assets\/notebar-16x16.png" : {
+    "\/source\/android-chrome-384x384.png" : {
       "ft" : 32768,
-      "iS" : 535,
+      "iS" : 100801,
       "oA" : 0,
-      "oAP" : "\/docs\/assets\/notebar-16x16.png",
+      "oAP" : "\/docs\/android-chrome-384x384.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
@@ -110,15 +110,51 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/source\/assets\/notebar-32x32.png" : {
+    "\/source\/apple-touch-icon.png" : {
       "ft" : 32768,
-      "iS" : 1398,
+      "iS" : 18269,
       "oA" : 0,
-      "oAP" : "\/docs\/assets\/notebar-32x32.png",
+      "oAP" : "\/docs\/apple-touch-icon.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/assets\/GitHub-Mark.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/docs\/assets\/GitHub-Mark.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/assets\/notebar-1024x512.jpg" : {
+      "ft" : 16384,
+      "iS" : 85551,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/assets\/notebar-1024x512.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/assets\/notebar-1024x1024.jpg" : {
+      "ft" : 16384,
+      "iS" : 129248,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/assets\/notebar-1024x1024.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -159,6 +195,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/source\/browserconfig.xml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/browserconfig.xml",
+      "oF" : 0
+    },
     "\/source\/css\/main.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -170,6 +214,32 @@
       "oAP" : "\/docs\/css\/main.css",
       "oF" : 1,
       "pg" : 2
+    },
+    "\/source\/favicon-16x16.png" : {
+      "ft" : 32768,
+      "iS" : 1452,
+      "oA" : 0,
+      "oAP" : "\/docs\/favicon-16x16.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/favicon-32x32.png" : {
+      "ft" : 32768,
+      "iS" : 1258,
+      "oA" : 0,
+      "oAP" : "\/docs\/favicon-32x32.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/source\/favicon.ico" : {
       "cB" : 0,
@@ -185,6 +255,37 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/docs\/index.html",
+      "oF" : 0
+    },
+    "\/source\/mstile-150x150.png" : {
+      "ft" : 32768,
+      "iS" : 9816,
+      "oA" : 0,
+      "oAP" : "\/docs\/mstile-150x150.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/source\/safari-pinned-tab.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/docs\/safari-pinned-tab.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/source\/site.webmanifest" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/site.webmanifest",
       "oF" : 0
     },
     "\/tailwind.config.js" : {
@@ -211,7 +312,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_green",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 642818630.61430895
+    "lastBuiltDate" : 644098349.59297705
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

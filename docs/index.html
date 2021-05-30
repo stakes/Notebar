@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/notebar-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/notebar-16x16.png">
-  <link rel="stylesheet" href="css/main.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  </style>
-  <title>Notebar</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <meta http-equiv="content-type" content="text/html;UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="content-security-policy" content="upgrade-insecure-requests">
+  
+    <meta name="description" content="Notebar is a place to take simple, plain-text notes in your macOS menu bar.">
+    <meta name="author" content="Jay Stakelon">
+  
+    <meta http-equiv="cache-control" content="cache">
+    <meta http-equiv="revisit-after" content="1 day">
+  
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Notebar" />
+    <meta property="og:site_name" data-page-subject="true" content="Notebar" />
+    <meta property="og:url" content="https://stakes.github.io/Notebar/" />
+    <meta property="og:description" name="description" content="Notebar is a place to take simple, plain-text notes in your macOS menu bar." />
+  
+    <meta property="og:image" content="https://stakes.github.io/Notebar/assets/notebar-1024x512.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image" content="https://stakes.github.io/Notebar/assets/notebar-1024x1024.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@stakelon">
+    <meta name="twitter:title" content="Notebar">
+    <meta name="twitter:description" content="Notebar is a place to take simple, plain-text notes in your macOS menu bar.">
+    <meta name="twitter:image" content="https://stakes.github.io/Notebar/assets/notebar-1024x1024.jpg">
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <title>Notebar</title>
+  </head>
 <body class="antialiased bg-gray-50">
+
+  <div class="w-full border-b border-black border-opacity-10 bg-black bg-opacity-5 text-black text-sm py-2 px-4">
+    <div class="w-full max-w-4xl mx-auto">
+      <div class="float-left hidden sm:block"><h1 class="font-bold"><a href="https://menubar.club">Menubar.club</a></h1></div>
+      <div class="flex float-none sm:float-right">
+        <ul class="inline-block m-auto">
+          <a class="px-2" href="https://stakes.github.io/Daybar/">Daybar</a>
+          <a class="px-2" href="https://stakes.github.io/Snapbar/">Snapbar</a>
+          <a class="px-2 font-semibold" href="https://stakes.github.io/Notebar/">Notebar</a>
+        </ul>    
+      </div>
+      <div class="clear-both"></div>
+    </div>    
+  </div>
+
+
 <div class="text-gray-900 max-w-lg flex flex-col justify-center mx-auto items-center px-12 sm:px-0 py-24">
   <img src="assets/notebar-icon.svg" />
   <h1 class="py-4 text-5xl font-bold">Notebar</h1>
@@ -24,11 +76,19 @@
   <div class="text-left border-t border-gray-200 py-8">
     <p class="text-lg py-2">Notebar's ready for quick notetaking whenever inspiration strikes.</p>
     <p class="text-lg py-2">It's an always-on, stream-of-consciousness notepad; nothing more, nothing less.</p>
+    <div class="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-2">
+      <button class="w-auto bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+        Download for macOS
+      </button>
+      <button class="w-auto bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded">
+        <img class="inline align-text-top mr-1" src="assets/GitHub-Mark.svg" alt="Github mark" width="18" height="18" />Source on Github
+      </button>
+    </div>
   </div>
   <div class="text-left border-t border-gray-200 py-10">
     <div class="pb-6">
       <h3 class="text-base font-bold uppercase text-gray-600">Get Notebar</h3>
-      <p class="text-base py-2"><a class="text-blue-700" href="https://github.com/stakes/Notebar/releases/download/1.0-alpha/Daybar.zip">Download</a> and unzip the app, then put it into your Applications folder.</p>
+      <p class="text-base py-2"><a class="text-purple-700 hover:text-purple-800 hover:underline" href="https://github.com/stakes/Notebar/releases/download/1.0-alpha/Daybar.zip">Download</a> and unzip the app, then put it into your Applications folder.</p>
     </div>
     <div class="pb-6">
       <h3 class="text-base font-bold uppercase text-gray-600">What it does</h3>
@@ -40,7 +100,7 @@
     </div>
     <div class="pb-6">
       <h3 class="text-base font-bold uppercase text-gray-600">Find a bug?</h3>
-      <p class="text-base py-2">Please <a class="text-blue-700" href="https://github.com/stakes/Notebar/issues">create an issue</a> on Github!</p>
+      <p class="text-base py-2">I really just built this for myself and it's definitely alpha-quality. Please <a class="text-purple-700 hover:text-purple-900 hover:underline" href="https://github.com/stakes/Notebar/issues">create an issue</a> on Github if you find something that's broken!</p>
     </div>
   </div>
 </div>
