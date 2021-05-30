@@ -126,10 +126,10 @@
     "\/source\/assets\/GitHub-Mark.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/docs\/assets\/GitHub-Mark.svg",
-      "oF" : 0,
-      "opt" : 0,
+      "oF" : 1,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -139,7 +139,7 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/docs\/assets\/notebar-1024x512.jpg",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "ou" : "lpckwebp-none",
@@ -152,7 +152,7 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/docs\/assets\/notebar-1024x1024.jpg",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "ou" : "lpckwebp-none",
@@ -162,10 +162,10 @@
     "\/source\/assets\/notebar-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
-      "oA" : 2,
+      "oA" : 0,
       "oAP" : "\/docs\/assets\/notebar-icon.svg",
-      "oF" : 0,
-      "opt" : 0,
+      "oF" : 1,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -174,7 +174,7 @@
       "iS" : 101966,
       "oA" : 0,
       "oAP" : "\/docs\/assets\/notebar-img-dark.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -187,7 +187,7 @@
       "iS" : 118241,
       "oA" : 0,
       "oAP" : "\/docs\/assets\/notebar-img-light.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 1,
       "oT" : 1,
@@ -312,7 +312,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets_green",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 644098349.59297705
+    "lastBuiltDate" : 644098476.25285494
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
